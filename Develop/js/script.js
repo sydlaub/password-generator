@@ -23,24 +23,18 @@ var passwordCriteria = {
   //variable for length of password
   passwordLength: 0,
 
-  //variable to hold letters
-  passwordLetters: 'abcdefghijklmnopqrstuvwxyz'.split(''),
+  //variable to hold lowercase letters
+  passwordLettersLowercase: 'abcdefghijklmnopqrstuvwxyz'.split(''),
+
+  //variable to hold uppercase letters
+  passwordLettersUppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
 
   //variable to hold numbers
   passwordNumbers: '0123456789'.split(''),
 
   //variable to hold special characters
-  passwordCharacters: ["~","`","!","@#$%^&*()-_+={}[]\|/:;"'<>,.?"]
-
-
-
+  passwordCharacters: ["~" , "`" , "!" , "@" , "#" , "$" , "%" , "^" , "&" , "*" , "(" , ")" , "-" , "_" , "+" , "=" , "{" , "}" , "[" , "]" , "\\" , "|" , "/" , ":" , ";" , "'" , "<" , ">" , "," , "." , "?"],
 }
-
-
-
-
-function generatePassword() {
- 
 
 // !Need a variable to store the password as it's being built!
 // Need a variable for the mega-array of characters
@@ -75,6 +69,7 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
+  //this calls on the generatePassword function
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -84,3 +79,19 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//function to generate new password
+function generatePassword() {
+  //ned variable to store the new password
+  var newPassword = "";
+
+  //need variables to store criteria input
+  var paswordLength = 0;
+  var uppercaseLetters;
+  var lowercaseLetters;
+  var numbers;
+  var specialCharacters; 
+
+
+}
+
