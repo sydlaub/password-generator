@@ -17,27 +17,36 @@ var generateBtn = document.querySelector("#generate");
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
 
-function generatePassword() {
-  var unfinishedPassword = "";
-  var characters = [];
-  var passwordLength = prompt("How long do you want the password to be? The password should be between at least 8 characters and no more than 128 characters.")
-  
-  if (passwordLength < "7"){
-    alert('That is too short, please a longer password length.')
-  } else { (passwordLength > "127"){
-    alert('That is too long, please try a shorter password length.')
-  } else {
-    
-  }
+//Password object to store password as its being built
+var passwordCriteria = {
 
-    }
-  
+  //variable for length of password
+  passwordLength: 0,
+
+  //variable to hold letters
+  passwordLetters: 'abcdefghijklmnopqrstuvwxyz'.split(''),
+
+  //variable to hold numbers
+  passwordNumbers: '0123456789'.split(''),
+
+  //variable to hold special characters
+  passwordCharacters: ["~","`","!","@#$%^&*()-_+={}[]\|/:;"'<>,.?"]
+
+
+
+}
+
+
+
+
+function generatePassword() {
+ 
 
 // !Need a variable to store the password as it's being built!
 // Need a variable for the mega-array of characters
-// Need to ask the user how long the password should be
-  // prompt ()
-  // ^ this needs to be stored in a variable
+// !Need to ask the user how long the password should be
+  // !prompt ()
+  // !^ this needs to be stored in a variable
 // Confirm whether to use uppercase letters, lowercase letters, numbers, and/or special characters
 // Need to check whether the user selected a valid password length 
 // need to check whether user selected at least one character type 
