@@ -22,7 +22,7 @@ var passwordCriteria = {
 }
 
 // variable to store all possible password characters based on user input
-var masterArray = [];
+// var masterArray = [];
 
 // Write password to the #password input
 function writePassword() {
@@ -31,7 +31,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 
@@ -39,6 +38,8 @@ function writePassword() {
 function generatePassword() {
   //need variable to store the new password
   var newPassword = "";
+
+  var masterArray = [];
 
   //need variables to store criteria input
   var passwordLength = 0;
