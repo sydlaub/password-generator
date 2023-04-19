@@ -11,7 +11,7 @@ Links:
 - [Link to github repository](https://github.com/sydlaub/password-generator)
 
 The website can be viewed on a desktop web browser as shown below
-![Screenshot of deployed Password Generator site](../password-generator/Develop/Assets/slaub-password-generator%20-%20Copy.png)
+![Screenshot of deployed Password Generator site](./Develop/Assets/slaub-password-generator%20-%20Copy.png)
 
 ## Credits
 Collaborators include teachers, TAs, tutors and fellow students in the Columbia University Full Stack Engineering Bootcamp 2023 Spring cohort.
